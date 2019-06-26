@@ -1,0 +1,25 @@
+version: "3.7"
+services:
+  database:
+    build:
+      context: ./config/database
+    container_name: database
+    environment:
+      MYSQL_DATABASE: wp
+      MYSQL_USER: wp
+      MYSQL_PASSWORD: pw
+      MYSQL_ROOT_PASSWORD: root
+    image: dbi
+    ports:
+      - 3306:3306
+    restart: always
+  webserver:
+    build:
+      context: ./config/webserver
+    container_name: webserver
+    image: wsi
+    ports: 
+      - 8000:80
+    volumes:
+      - ./src:/var/www/html
+
