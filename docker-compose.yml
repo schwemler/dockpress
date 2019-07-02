@@ -26,3 +26,13 @@ services:
       - ./src:/var/www/html
       - ./wp-config.php:/var/www/wp-config.php
 
+  phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin/phpmyadmin:4.8
+    ports:
+      - 8080:80
+    environment:
+      PMA_HOST: database
+      PMA_USER: wp
+      PMA_PASSWORD: pw
+    
