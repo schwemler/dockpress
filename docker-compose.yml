@@ -24,4 +24,5 @@ services:
       - 8000:80
     volumes:
       - ./src:/var/www/html
+      - ./wp-config.php:/var/www/wp-config.php
 
