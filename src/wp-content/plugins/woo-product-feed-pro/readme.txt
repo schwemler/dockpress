@@ -6,7 +6,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 Tags: Product Feed, Google Shopping, Google Shopping Feed, WooCommerce Product Feed, WooCommerce Product Feed PRO, Bing Shopping, Bing product feed, Bing remarking, Google Merchant Feed, Google DRM Feed, Google Dynamic Remarketing Feed, Facebook feed, Google feed, Bing feed, Facebook Product Feed, Facebook Dynamic remarketing, Data Feed, WooCommerce Feed, XML product feed, CSV product feed, TSV, TXT product feed, comparison shopping engines, comparison shopping websites, vergelijk.nl, vergelijk.be, vertaa.fi, beslist.nl, kieskeurig.nl, bol.com, raketten, pricerunner, pricegrabber, Buy, leGuide, Kelkoo, Twenga, Yandex, Etsy, Dealtime, Shopzilla, Billiger, Google Product Review feed
 Requires at least: 4.5
 Tested up to: 5.2
-Stable tag: 5.9.3
+Stable tag: 5.9.5
 
 == Description ==
 
@@ -274,6 +274,13 @@ Questions left or unanswered? Please do not hesitate to contact us at support@ad
 8. Set the basic configurations for your product feed
 
 === Changelog ===
+
+= 5.9.5 (2019-07-04) =
+* Fixed a bug: adding fields on the field mapping page did not work in Firefox. This has been fixed now.
+* Fixed php warnings: when a Google Product Review Feed was created and attributes contained html characters PHP warnings were shown. This has been fixed now.
+
+= 5.9.4 (2019-07-04) =
+* Fixed links to tutorials in the feed configuration screens.
 
 = 5.9.3 (2019-07-02) =
 * Added color, size, gender, material and pattern product fields for the extra fields feature
@@ -1826,6 +1833,13 @@ Questions left or unanswered? Please do not hesitate to contact us at support@ad
 * Strip HTML from the (short) description attributes
 
 == Upgrade Notice ==
+
+= 5.9.5 =
+Fixed a bug: adding fields on the field mapping page did not work in Firefox. This has been fixed now.
+Fixed php warnings: when a Google Product Review Feed was created and attributes contained html characters PHP warnings were shown. This has been fixed now.
+
+= 5.9.4 =
+Fixed links to tutorials in the feed configuration screens.
 
 = 5.9.3 =
 Added color, size, gender, material and pattern product fields for the extra fields feature

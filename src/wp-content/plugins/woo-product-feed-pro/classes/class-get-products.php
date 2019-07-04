@@ -877,7 +877,9 @@ class WooSEA_Get_Products {
 												}
 											} else {
 												if(isset($nodes[1])){
-													$rev = $productz->addChild(strtolower($nodes[0]), $nodes[1]);	
+                                                                                                        $content = html_entity_decode($nodes[1]);
+                                                                                                        $content = htmlspecialchars($content);
+                                                                                                        $rev = $productz->addChild(strtolower($nodes[0]), $content);
 												}
 											}
 									

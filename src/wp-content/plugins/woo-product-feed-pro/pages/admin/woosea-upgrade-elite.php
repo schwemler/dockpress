@@ -132,7 +132,7 @@ if (!wp_next_scheduled( 'woosea_cron_hook' ) ) {
                                                         <ul>
                                                                 <li><strong><a href="https://adtribes.io/support/" target="_blank">Frequently Asked Questions</a></strong></li>
                                                                 <li><strong><a href="https://www.youtube.com/channel/UCXp1NsK-G_w0XzkfHW-NZCw" target="_blank">YouTube tutorials</a></strong></li>
-                                                                <li><strong><a href="https://adtribes.io/blog/" target="_blank">Blog</a></strong></li>
+                                                                <li><strong><a href="https://adtribes.io/tutorials/" target="_blank">Tutorials</a></strong></li>
 								<li><strong><a href="https://adtribes.io/pro-vs-elite/?utm_source=$domain&utm_medium=plugin&utm_campaign=upgrade-elite" target="_blank">Upgrade to Elite</a></strong></li>
                                                         </ul>
                                                         Or just reach out to us at  <strong><a href="https://wordpress.org/support/plugin/woo-product-feed-pro/" target="_blank">the support forum</a></strong> and we'll make sure your product feeds will be up-and-running within no-time.
@@ -142,7 +142,7 @@ if (!wp_next_scheduled( 'woosea_cron_hook' ) ) {
 
                                 <table class="woo-product-feed-pro-table">
                                         <tr>
-                                                <td><strong>Our latest blog articles</strong></td>
+                                                <td><strong>Our latest tutorials</strong></td>
                                         </tr>
                                         <tr>
                                                 <td>

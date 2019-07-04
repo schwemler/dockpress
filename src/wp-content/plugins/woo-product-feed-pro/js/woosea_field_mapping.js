@@ -115,7 +115,7 @@ jQuery(document).ready(function($) {
 			var re = /^[a-zA-Zа-яА-Я_-]*$/;
 			if (input.indexOf("PARAM_") >= 0){
 				// For Yandex, Zbozi and Heureka also accept Cyrillic characters
-				var re = /^[a-zA-ZаАбБвВгГдДеЕёЁжЖзЗиИйЙкКлЛмМнНоОпПрРсСтТуУфФхХцЦчЧшШщЩъЪыЫьЬэЭюЮяЯ _-,]+$/;
+				var re = /^[a-zA-ZаАбБвВгГдДеЕёЁжЖзЗиИйЙкКлЛмМнНоОпПрРсСтТуУфФхХцЦчЧшШщЩъЪыЫьЬэЭюЮяЯ \_\-\,]+$/;
 			}
                 	var minLength = 2;
                 	var maxLength = 50;

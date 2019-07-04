@@ -70,7 +70,7 @@ class WooSEA_Get_Admin_Notifications {
 				$message_type = "notice notice-info is-dismissible";
 				break;
 			case 4:
-				$message = __( 'Create filter and rules so exactly the right products end up in your product feed. These filters and rules are only eligable for the current product feed you are configuring and will not be used for other feeds.<br/><br/><strong>Filters:</strong> Exclude or include products that meet certain conditions. [<strong><i><a href=\"https://adtribes.io/how-to-create-filters-for-your-product-feed/\" target=\"_blank\">Detailed information and filter examples</a></i></strong>] or [<strong><i><a href=\"https://adtribes.io/create-a-product-feed-for-one-specific-category/\">Create a product feed for just 1 category</a></i></strong>]<br/><strong>Rules:</strong> Change attribute values based on other attribute values or conditions.[<strong><i><a href=\"https://adtribes.io/how-to-create-rules/\" target=\"_blank\">Detailed information about rules and some examples</a></i></strong>]<br/><br/>Order of execution: the filters and rules will be executed in the order of creation.','woosea' );	
+				$message = __( 'Create filter and rules so exactly the right products end up in your product feed. These filters and rules are only eligable for the current product feed you are configuring and will not be used for other feeds.<br/><br/><strong>Filters:</strong> Exclude or include products that meet certain conditions. [<strong><i><a href="https://adtribes.io/how-to-create-filters-for-your-product-feed/" target="_blank">Detailed information and filter examples</a></i></strong>] or [<strong><i><a href="https://adtribes.io/create-a-product-feed-for-one-specific-category/" target="_blank">Create a product feed for just 1 category</a></i></strong>]<br/><strong>Rules:</strong> Change attribute values based on other attribute values or conditions.[<strong><i><a href="https://adtribes.io/how-to-create-rules/" target="_blank">Detailed information about rules and some examples</a></i></strong>]<br/><br/>Order of execution: the filters and rules will be executed in the order of creation.','woosea' );	
 				$message_type = "notice notice-info";
 				break;
 			case 5:
@@ -82,7 +82,7 @@ class WooSEA_Get_Admin_Notifications {
 				$message_type = "notice notice-info is-dismissible";
 				break;
 			case 7:
-				$message = __( 'For the selected channel the attributes shown below are mandatory, please map them to your product attributes. We\'ve already pre-filled a lot of mappings so all you have to do is check those and map the ones that are left blank or add new ones by hitting the \'Add field mapping\' button.<br/><br/>[<strong><i><a href=\"https://adtribes.io/how-to-use-static-values-and-create-fake-content-for-your-product-feed/\" target=\"_blank\">Learn how to use static values</a></i></strong>]','woosea' );
+				$message = __( 'For the selected channel the attributes shown below are mandatory, please map them to your product attributes. We\'ve already pre-filled a lot of mappings so all you have to do is check those and map the ones that are left blank or add new ones by hitting the \'Add field mapping\' button.<br/><br/>[<strong><i><a href="https://adtribes.io/how-to-use-static-values-and-create-fake-content-for-your-product-feed/" target="_blank">Learn how to use static values</a></i></strong>]','woosea' );
 				$message_type = "notice notice-info";
 				break;
 			case 8:
@@ -114,7 +114,7 @@ class WooSEA_Get_Admin_Notifications {
 				$message_type = "notice notice-info";
 				break;
 			case 15:
-				$message = __( 'Manipulate your product data to improve the quality of your product feeds and online marketing campaigns. Manipulating your product data is an extremely powerfull feature. Check out an example we have created in our blog post: <b><u><a href=\"https://adtribes.io/feature-product-data-manipulation/\" target=\"_blank\">Manipulating product data</a></u></b>','woosea' );
+				$message = __( 'Manipulate your product data to improve the quality of your product feeds and online marketing campaigns. Manipulating your product data is an extremely powerfull feature. Check out an example we have created in our blog post: <b><u><a href="https://adtribes.io/feature-product-data-manipulation/" target="_blank">Manipulating product data</a></u></b>','woosea' );
 				$message_type = "notice notice-info";
 				break;
 		}

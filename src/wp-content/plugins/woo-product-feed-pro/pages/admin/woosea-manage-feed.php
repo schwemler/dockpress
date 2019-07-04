@@ -295,7 +295,7 @@ if (!wp_next_scheduled( 'woosea_cron_hook' ) ) {
                                                         <ul>
                                                                 <li><strong><a href="https://adtribes.io/support/?utm_source=<?php print"$host";?>&utm_medium=manage-feed&utm_campaign=faq" target="_blank"><?php _e( 'Frequently Asked Questions','woo-product-feed-pro' );?></a></strong></li>
                                                                 <li><strong><a href="https://www.youtube.com/channel/UCXp1NsK-G_w0XzkfHW-NZCw" target="_blank"><?php _e( 'YouTube tutorials','woo-product-feed-pro' );?></a></strong></li>
-                                                                <li><strong><a href="https://adtribes.io/blog/?utm_source=<?php print "$host";?>&utm_medium=manage-feed&utm_campaign=blog" target="_blank"><?php _e( 'Tutorials','woo-product-feed-pro' );?></a></strong></li>
+                                                                <li><strong><a href="https://adtribes.io/tutorials/?utm_source=<?php print "$host";?>&utm_medium=manage-feed&utm_campaign=tutorials" target="_blank"><?php _e( 'Tutorials','woo-product-feed-pro' );?></a></strong></li>
                                                         </ul>
                                                         <?php _e( 'Or just reach out to us at','woo-product-feed-pro' );?>  <strong><a href="https://wordpress.org/support/plugin/woo-product-feed-pro/" target="_blank"><?php _e( 'our Wordpress forum','woo-product-feed-pro' );?></a></strong> <?php _e( 'and we will make sure your product feeds will be up-and-running within no-time.','woo-product-feed-pro' );?>
                                                 </td>

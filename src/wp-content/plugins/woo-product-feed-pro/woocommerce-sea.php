@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Product Feed PRO for WooCommerce
- * Version:     5.9.3
+ * Version:     5.9.5
  * Plugin URI:  https://www.adtribes.io/support/?utm_source=wpadmin&utm_medium=plugin&utm_campaign=woosea_product_feed_pro
  * Description: Configure and maintain your WooCommerce product feeds for Google Shopping, Facebook, Remarketing, Bing, Yandex, Comparison shopping websites and over a 100 channels more.
  * Author:      AdTribes.io
@@ -48,7 +48,7 @@ if (!defined('ABSPATH')) {
  * Plugin versionnumber, please do not override.
  * Define some constants
  */
-define( 'WOOCOMMERCESEA_PLUGIN_VERSION', '5.9.3' );
+define( 'WOOCOMMERCESEA_PLUGIN_VERSION', '5.9.5' );
 define( 'WOOCOMMERCESEA_PLUGIN_NAME', 'woocommerce-product-feed-pro' );
 define( 'WOOCOMMERCESEA_PLUGIN_NAME_SHORT', 'woo-product-feed-pro' );
 
@@ -171,7 +171,7 @@ function woosea_plugin_action_links($links, $file) {
 		// link to what ever you want
 		$host = $_SERVER['HTTP_HOST'];
         	$plugin_links[] = '<a href="https://adtribes.io/support/?utm_source='.$host.'&utm_medium=pluginpage&utm_campaign=support" target="_blank">Support</a>';
-        	$plugin_links[] = '<a href="https://adtribes.io/blog/?utm_source='.$host.'&utm_medium=pluginpage&utm_campaign=blog" target="_blank">Blog</a>';
+        	$plugin_links[] = '<a href="https://adtribes.io/tutorials/?utm_source='.$host.'&utm_medium=pluginpage&utm_campaign=tutorials" target="_blank">Tutorials</a>';
 		                
 		$license_information = get_option( 'license_information' );
                 if($license_information['license_valid'] <> "true"){
@@ -3119,7 +3119,7 @@ function woosea_license_valid(){
         $license_information = get_option('license_information');
 
         $curl = curl_init();
-        $url = "https://www.adtribes.io/check/license.php?key=$license_information[license_key]&email=$license_information[license_email]&domain=$domain&version=5.9.3";
+        $url = "https://www.adtribes.io/check/license.php?key=$license_information[license_key]&email=$license_information[license_email]&domain=$domain&version=5.9.5";
 
         curl_setopt_array($curl, array(
                 CURLOPT_RETURNTRANSFER => 1,
@@ -3471,8 +3471,7 @@ add_action( 'admin_menu' , 'woosea_menu_addition' );
 function woosea_blog_widgets() {
 	global $wp_meta_boxes;
 	
-	add_meta_box('woosea_rss_dashboard_widget', __('Latest Product Feed Pro blog posts', 'rc_mdm'), 'woosea_my_rss_box','dashboard','side','high');
-	//wp_add_dashboard_widget('woosea_rss_dashboard_widget', __('Latest Product Feed Pro blog posts', 'rc_mdm'), 'woosea_my_rss_box');
+	add_meta_box('woosea_rss_dashboard_widget', __('Latest Product Feed Pro Tutorials', 'rc_mdm'), 'woosea_my_rss_box','dashboard','side','high');
 }
 add_action('wp_dashboard_setup', 'woosea_blog_widgets');
 
@@ -3552,7 +3551,7 @@ function woosea_my_rss_box() {
 			// End <ul> tag
 			echo '</ul>';
 			echo '<hr style="border: 0; background-color: #DFDFDF; height: 1px;">';
-			echo '<a href="https://adtribes.io/blog/?utm_source='.$domain.'&utm_medium=plugin&utm_campaign=dashboard-rss" target="_blank">Read more like this on our blog</a>';
+			echo '<a href="https://adtribes.io/tutorials/?utm_source='.$domain.'&utm_medium=plugin&utm_campaign=dashboard-rss" target="_blank">More tutorials on our website</a>';
 			echo '</div>';
 		endif;
 	endforeach; // End foreach feed
