@@ -15,6 +15,8 @@ RUN apt-get update -y && apt-get install -y \
     libfreetype6-dev \
     zlib1g-dev
 
+RUN a2enmod rewrite headers
+
 RUN docker-php-ext-install mysqli
 RUN docker-php-ext-install mbstring
 RUN docker-php-ext-install zip
