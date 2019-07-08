@@ -21,10 +21,11 @@ services:
     container_name: webserver
     image: wsi
     ports: 
-      - 8000:80
+      - 80:80
     volumes:
       - ./src:/var/www/html
       - ./wp-config.php:/var/www/wp-config.php
+      - ./html_static:/var/www/html_static
 
   phpmyadmin:
     container_name: phpmyadmin
