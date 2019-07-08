@@ -3,7 +3,7 @@ Contributors: oceanwp
 Tags: widgets, meta box, metaboxes, metabox, oceanwp
 Requires at least: 4.6
 Tested up to: 5.2
-Stable tag: 1.5.9
+Stable tag: 1.5.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,8 +32,8 @@ This plugin will only work with the [OceanWP](https://oceanwp.org/) theme.
 
 == Changelog ==
 
-= 1.5.9 =
-- Tweak: Many improved files.
+= 1.5.10 =
+- Fixed: Errors issue with the updater.php file.
 
 = 1.5.8 =
 - Tweak: Gutenberg support removed for the My Library post type to avoid conflict with Ocean Hooks.
