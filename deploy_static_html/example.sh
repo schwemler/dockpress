@@ -3,7 +3,7 @@
 # COPY THIS SCRIPT & SET PROJECT DATA BEFORE EXEC
 # PROJECT_NAME should be the same as github user name to deploy
 
-PROJECT_NAME=myproject
+PROJECT_NAME=example
 
 PROJECT_GITHUB_URL=https://github.com/${PROJECT_NAME}/${PROJECT_NAME}.github.io.git
 PROJECT_DIR=./../${PROJECT_NAME}_static

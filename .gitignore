@@ -3,3 +3,7 @@ src/wp-config.php
 src/wp-content/uploads/*
 html_static/*
 !.gitkeep
+
+deploy_static_html/*
+!example.sh
+
