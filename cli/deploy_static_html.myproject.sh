@@ -1,8 +1,11 @@
 #!/bin/bash
 
-PROJECT_NAME=schwemler
-PROJECT_GITHUB_URL=https://github.com/schwemler/schwemler.github.io.git
+# COPY THIS SCRIPT & SET PROJECT DATA BEFORE EXEC
+# PROJECT_NAME should be the same as github user name to deploy
 
+PROJECT_NAME=myproject
+
+PROJECT_GITHUB_URL=https://github.com/${PROJECT_NAME}/${PROJECT_NAME}.github.io.git
 PROJECT_DIR=./../${PROJECT_NAME}_static
 rm -Rf $PROJECT_DIR
 mkdir -p $PROJECT_DIR
