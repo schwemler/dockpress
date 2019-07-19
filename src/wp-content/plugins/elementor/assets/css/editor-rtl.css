@@ -1,4 +1,4 @@
-/*! elementor - v2.6.1 - 10-07-2019 */
+/*! elementor - v2.6.5 - 18-07-2019 */
 @charset "UTF-8";
 *, :before, :after {
   margin: 0;
@@ -1810,7 +1810,7 @@ select {
 
 .elementor-control-type-icons .elementor-control-media__preview i {
   font-size: 70px;
-  color: #a4afb7; }
+  color: #6d7882; }
 
 .elementor-control-type-icons .elementor-control-media__preview svg {
   height: 75%; }
@@ -4527,6 +4527,12 @@ body:not(.elementor-device-desktop) #elementor-notice-bar {
   height: 700px; }
 
 #elementor-icons-manager-modal .dialog-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+#elementor-icons-manager-modal .dialog-buttons-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
