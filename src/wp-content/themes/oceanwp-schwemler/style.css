@@ -1,0 +1,17 @@
+/*
+Theme Name: Autoservice Schwemler OceanWP Child
+Theme URI: https://oceanwp.org/
+Description: OceanWP WordPress theme example child theme.
+Author: Nick
+Author URI: https://oceanwp.org/
+Template: oceanwp
+Version: 1.0
+*/
+
+/* Parent stylesheet should be loaded from functions.php not using @import */
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 20px 0 0 0;
+}
