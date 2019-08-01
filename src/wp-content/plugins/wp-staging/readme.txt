@@ -9,7 +9,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: staging, duplication, cloning, clone, migration, sandbox, test site, testing, backup, post, admin, administration, duplicate posts
 Requires at least: 3.6+
 Tested up to: 5.2
-Stable tag: 2.6.0
+Stable tag: 2.6.1
 Requires PHP: 5.3
 
 A duplicator plugin! Clone, duplicate and migrate live sites to independent staging and development sites that are available only to administrators.
@@ -151,14 +151,21 @@ https://wp-staging.com
 
 == Changelog ==
 
+= 2.6.1 =
+* New: Improve styling of login form. Thanks to Andy Kennan (Screaming Frog)
+* New: Add 'password lost' button to login form
+* New: Change welcome page CTA
+* New: Add feedback option when plugin is disabled
+* Fix: PDO instances can not be serialized or unserialized
+* Fix: Can not update staging site db table if there are constraints in it
+
+
 = 2.6.0 =
 * New: Compatible up to WordPress 5.2.2
 * New: Performance improvement for directory iterator using less server ressources
 * New: Add filter wpstg_folder_permission to set a custom folder permission like 0755, allows to overwrite FS_CHMOD_DIR if it has been defined.
 * Fix: Error conditions in class Data does not compare type strict (== vs. ==)  resulting in interruption of clone process
 * Fix: Excluded folders under wp-content level are not take into account on microsoft IIS servers
-
-
 
 = 2.5.9 =
 * New: Update for WP 5.2.1

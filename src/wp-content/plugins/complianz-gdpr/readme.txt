@@ -6,7 +6,7 @@ Requires at least: 4.6
 License: GPL2
 Requires PHP: 5.6
 Tested up to: 5.2
-Stable tag: 3.0.7
+Stable tag: 3.0.9
 
 Configure your Cookie Notice, Cookie Consent and Cookie Policy with our Wizard and Cookie Scan. Supports GDPR, AVG, ePrivacy, DSVGO, CCPA and COPPA. 
 
@@ -39,8 +39,6 @@ Complianz is on [GitHub](https://github.com/rlankhorst/complianz-gdpr) as well!
 If you enjoy this plugin and you want your site to have the best compliancy features, consider purchasing the [premium version](https://complianz.io/pricing), also available for multisite users.
 
 = Premium features =
-
-The Privacy Suite for WordPress:
 * Select both US and EU as target region with conditional Consent and Cookie Banners.
 * Consent Statistics: see how many visitors accept, decline, or don't need a cookie notice at all.
 * A/B Testing: which cookie banner has the best consent ratio? Run tests and measure what works best for your site.
@@ -92,6 +90,21 @@ The Children’s Online Privacy Protection Act (COPPA) is a law designed to prot
 With some custom css this is possible, but we do not consider a cookie wall to be GDPR compliant, so it's not actively supported.
 
 == Change log ==
+= 3.0.9 =
+* Fix: region not passed correctly to policy url retrieval function
+
+= 3.0.8 =
+* Improvement: add option to configure your own cookie policy URL
+* Fix: creating legal document page when none is available after region switch
+* Improvement: W3C validator compatibility for documents
+* Fix: javascript pattern not matching correctly, causing both text/plain and text/javascript scripts.
+* Improvement: recommended action on Google Fonts
+* Fix: Pass font color to cc-category class
+* Fix: allow for content in iframes tags in regex pattern
+* Fix: A/B tracking still in progress notice when only one banner left
+* Fix: hide comment checkbox when WP personal data storage for comments is disabled
+* Fix: hide security measures question when privacy policy not selected
+
 = 3.0.7 =
 * Tweak: remove blocking of custom Google implementations, as it is not yet possible to reactivate them
 

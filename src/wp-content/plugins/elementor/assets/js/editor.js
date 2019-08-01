@@ -1,4 +1,4 @@
-/*! elementor - v2.6.5 - 18-07-2019 */
+/*! elementor - v2.6.7 - 30-07-2019 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -10207,7 +10207,7 @@ var App = Marionette.Application.extend({
     NProgress.done();
     var previewWindow = this.$preview[0].contentWindow;
 
-    if (!previewWindow.elementorFrontend || elementor.config.preview.debug_data.error) {
+    if (!previewWindow.elementorFrontend) {
       this.onPreviewLoadingError();
       return;
     }
@@ -17278,7 +17278,6 @@ module.exports = Marionette.CompositeView.extend({
     'click @ui.apply': 'onApplyClick'
   },
   isRevisionApplied: false,
-  jqueryXhr: null,
   currentPreviewId: null,
   currentPreviewItem: null,
   initialize: function initialize() {
@@ -17288,22 +17287,16 @@ module.exports = Marionette.CompositeView.extend({
   },
   getRevisionViewData: function getRevisionViewData(revisionView) {
     var self = this;
-    this.jqueryXhr = elementor.history.revisions.getRevisionDataAsync(revisionView.model.get('id'), {
+    elementor.history.revisions.getRevisionDataAsync(revisionView.model.get('id'), {
       success: function success(data) {
         elementor.history.revisions.setEditorData(data.elements);
         elementor.settings.page.model.set(data.settings);
         self.setRevisionsButtonsActive(true);
-        self.jqueryXhr = null;
         revisionView.$el.removeClass('elementor-revision-item-loading');
         self.enterReviewMode();
       },
       error: function error(errorMessage) {
         revisionView.$el.removeClass('elementor-revision-item-loading');
-
-        if ('abort' === self.jqueryXhr.statusText) {
-          return;
-        }
-
         self.currentPreviewItem = null;
         self.currentPreviewId = null;
         alert(errorMessage);
@@ -17401,17 +17394,13 @@ module.exports = Marionette.CompositeView.extend({
       return;
     }
 
-    if (this.jqueryXhr) {
-      this.jqueryXhr.abort();
-    }
-
     if (self.currentPreviewItem) {
-      self.currentPreviewItem.$el.removeClass('elementor-revision-current-preview');
+      self.currentPreviewItem.$el.removeClass('elementor-revision-current-preview elementor-revision-item-loading');
     }
 
     childView.$el.addClass('elementor-revision-current-preview elementor-revision-item-loading');
 
-    if (elementor.saver.isEditorChanged() && null === self.currentPreviewId) {
+    if (elementor.saver.isEditorChanged() && (null === self.currentPreviewId || elementor.config.current_revision_id === self.currentPreviewId)) {
       elementor.saver.saveEditor({
         status: 'autosave',
         onSuccess: function onSuccess() {

@@ -7,7 +7,7 @@
  * Author: WP-Staging
  * Author URI: https://wp-staging.com
  * Contributors: ReneHermi, ilgityildirim
- * Version: 2.6.0
+ * Version: 2.6.1
  * Text Domain: wp-staging
  * Domain Path: /languages/
 
@@ -51,7 +51,7 @@ if( !defined( 'WPSTG_PLUGIN_URL' ) ) {
 
 // Version
 if( !defined( 'WPSTG_VERSION' ) ) {
-   define( 'WPSTG_VERSION', '2.6.0' );
+   define( 'WPSTG_VERSION', '2.6.1' );
 }
 
 // Must use version of the optimizer

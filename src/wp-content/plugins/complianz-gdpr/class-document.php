@@ -34,8 +34,36 @@ if (!class_exists("cmplz_document")) {
                     wp_register_style('cmplz-document', cmplz_url . "core/assets/css/document$min.css", false, cmplz_version);
                     wp_enqueue_style('cmplz-document');
                 }
+
+                add_action('wp_head', array($this, 'inline_styles'), 100);
             }
 
+        }
+
+        /**
+         * Get custom CSS for documents
+         *
+         * */
+
+        public function inline_styles(){
+
+            //basic color style for revoke button
+            $custom_css='';
+            $background_color = cmplz_get_value('brand_color');
+            if (!empty($background_color) ){
+                $light_background_color = $this->color_luminance($background_color, -0.2);
+                $custom_css = "#cmplz-document a.cc-revoke-custom {background-color:".$background_color.";border-color: ".$background_color.";}";
+                $custom_css .= "#cmplz-document a.cc-revoke-custom:hover {background-color: ".$light_background_color.";border-color: ".$light_background_color.";}";
+            }
+
+            if (cmplz_get_value('use_custom_document_css')) {
+                $custom_css .= cmplz_get_value('custom_document_css');
+            }
+
+            $custom_css = apply_filters('cmplz_custom_document_css', $custom_css);
+            if (empty($custom_css)) return;
+
+            echo '<style>' . $custom_css . '</style>';
         }
 
         /**
@@ -441,7 +469,7 @@ if (!class_exists("cmplz_document")) {
          * Create a page of certain type in wordpress
          * @since 1.0
          * @param $type
-         * @return void
+         * @return int page_id
          */
 
         public function create_page($type)
@@ -471,6 +499,8 @@ if (!class_exists("cmplz_document")) {
             }
 
             do_action('cmplz_create_page', $page_id, $type);
+
+            return $page_id;
 
         }
 
@@ -776,6 +806,8 @@ if (!class_exists("cmplz_document")) {
             } else {
                 return $page_id;
             }
+
+
             return false;
         }
 
@@ -818,16 +850,24 @@ if (!class_exists("cmplz_document")) {
          *
          */
 
-        public function get_page_url($type){
+        public function get_page_url($type, $region){
+            if (!cmplz_has_region($region)) return '';
+
+            $region = ($region == 'eu' || !$region) ? '' : '-' . $region;
+
             if (strpos($type,'privacy-statement')!==FALSE && cmplz_get_value('privacy-statement')!=='yes'){
                 $policy_page_id = (int)get_option('wp_page_for_privacy_policy');
             } else {
-                $policy_page_id = get_option('cmplz_document_id_'.$type);
+                $policy_page_id = get_option('cmplz_document_id_'.$type.$region);
             }
 
-            if (!$policy_page_id || !get_permalink($policy_page_id)){
-                $policy_page_id = $this->get_shortcode_page_id($type);
-                update_option('cmplz_document_id_'.$type, $policy_page_id);
+            if ((get_post_status($policy_page_id) !== 'publish') || !$policy_page_id || !get_permalink($policy_page_id)){
+                $policy_page_id = $this->get_shortcode_page_id($type.$region);
+
+                if (!$policy_page_id) {
+                    $policy_page_id = $this->create_page($type.$region);
+                }
+                update_option('cmplz_document_id_'.$type.$region, $policy_page_id);
             }
 
             return get_permalink($policy_page_id);
