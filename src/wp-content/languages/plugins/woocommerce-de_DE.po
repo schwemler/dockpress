@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-07-03 07:12:29+0000\n"
+"PO-Revision-Date: 2019-07-19 14:34:38+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -451,7 +451,7 @@ msgstr "Operator zum Vergleich der Begriffe der Produktattribute."
 
 #: includes/api/wc-blocks/class-wc-rest-blocks-products-controller.php:322
 msgid "Operator to compare product category terms."
-msgstr "Operator zum Vergleich der Begriffe der Produktkategorie."
+msgstr "Operator zum Vergleich der Begriffe der Produkt-Kategorie."
 
 #: includes/api/wc-blocks/class-wc-rest-blocks-products-controller.php:124
 #: includes/api/wc-blocks/class-wc-rest-blocks-products-controller.php:219
@@ -627,7 +627,7 @@ msgstr "Kontolöschanfrage"
 
 #: includes/abstracts/abstract-wc-rest-terms-controller.php:548
 msgid "Default product category cannot be deleted."
-msgstr "Die Standard-Produktkategorie kann nicht gelöscht werden."
+msgstr "Die Standard Produkt-Kategorie kann nicht gelöscht werden."
 
 #: includes/import/abstract-wc-product-importer.php:444
 msgid "Variation cannot be imported: Parent product cannot be a product variation"
@@ -1660,7 +1660,7 @@ msgstr "Alle Kategorien exportieren"
 
 #: includes/admin/views/html-admin-page-product-export.php:62
 msgid "Which product category should be exported?"
-msgstr "Welche Produktkategorie soll exportiert werden?"
+msgstr "Welche Produkt-Kategorie soll exportiert werden?"
 
 #: includes/admin/settings/class-wc-settings-products.php:317
 msgid "This is the attachment ID, or image URL, used for placeholder images in the product catalog. Products with no image will use this."
@@ -3583,7 +3583,7 @@ msgstr "Wie sollen Produkte standardmäßig im Katalog sortiert sein?"
 
 #: includes/customizer/class-wc-shop-customizer.php:406
 msgid "Choose what to display on product category pages."
-msgstr "Wähle aus, was auf den Produktkategorieseiten angezeigt werden soll."
+msgstr "Wähle aus, was auf den Produkt-Kategorie Seiten angezeigt werden soll."
 
 #: includes/customizer/class-wc-shop-customizer.php:405
 msgid "Category display"
@@ -5167,11 +5167,11 @@ msgstr "Die Zone „Orte, die nicht von deinen anderen Zonen abgedeckt sind“ k
 
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:257
 msgid "Product categories that the coupon will not be applied to, or that cannot be in the cart in order for the \"Fixed cart discount\" to be applied."
-msgstr "Produktkategorien, auf die der Gutschein nicht angewendet wird oder die sich nicht im Warenkorb befinden, damit der „Feste Warenkorb-Rabatt“ angewendet werden kann."
+msgstr "Produkt-Kategorien, auf die der Gutschein nicht angewendet wird oder die sich nicht im Warenkorb befinden, damit der „Feste Warenkorb-Rabatt“ angewendet werden kann."
 
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:239
 msgid "Product categories that the coupon will be applied to, or that need to be in the cart in order for the \"Fixed cart discount\" to be applied."
-msgstr "Produktkategorien, auf die der Gutschein angewendet wird oder die sich im Warenkorb befinden müssen, damit der „Feste Warenkorb-Rabatt“ angewendet werden kann."
+msgstr "Produkt-Kategorien, auf die der Gutschein angewendet wird oder die sich im Warenkorb befinden müssen, damit der „Feste Warenkorb-Rabatt“ angewendet werden kann."
 
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:218
 msgid "Products that the coupon will not be applied to, or that cannot be in the cart in order for the \"Fixed cart discount\" to be applied."
@@ -12911,7 +12911,7 @@ msgstr "Die Kategorie konnte nicht gelöscht werden"
 
 #: includes/api/legacy/v3/class-wc-api-products.php:855
 msgid "You do not have permission to delete product category"
-msgstr "Du hast keine Berechtigung, um Produktkategorien zu löschen"
+msgstr "Du hast keine Berechtigung, um Produkt-Kategorien zu löschen"
 
 #: includes/api/legacy/v3/class-wc-api-products.php:822
 msgid "Could not edit the category"
@@ -12919,15 +12919,15 @@ msgstr "Die Kategorie konnte nicht bearbeitet werden"
 
 #: includes/api/legacy/v3/class-wc-api-products.php:792
 msgid "You do not have permission to edit product categories"
-msgstr "Du hast keine Berechtigung, um Produktkategorien zu bearbeiten"
+msgstr "Du hast keine Berechtigung, um Produkt-Kategorien zu bearbeiten"
 
 #: includes/api/legacy/v3/class-wc-api-products.php:732
 msgid "Product category parent is invalid"
-msgstr "Die übergeordnete Produktkategorie ist ungültig"
+msgstr "Die übergeordnete Produkt-Kategorie ist ungültig"
 
 #: includes/api/legacy/v3/class-wc-api-products.php:712
 msgid "You do not have permission to create product categories"
-msgstr "Du hast keine Berechtigung, um Produktkategorien zu erstellen"
+msgstr "Du hast keine Berechtigung, um Produkt-Kategorien zu erstellen"
 
 #. Translators: %s: classname and link.
 #: includes/admin/views/html-admin-page-status-report.php:347
@@ -13779,7 +13779,7 @@ msgstr "Anzahl der anzuzeigenden Produkte"
 
 #: includes/widgets/class-wc-widget-product-categories.php:287
 msgid "No product categories exist."
-msgstr "Keine Produktkategorien vorhanden."
+msgstr "Keine Produkt-Kategorien vorhanden."
 
 #: includes/widgets/class-wc-widget-product-categories.php:73
 msgid "Only show children of the current category"
@@ -13803,7 +13803,7 @@ msgstr "Kategoriesortierung"
 
 #: includes/widgets/class-wc-widget-product-categories.php:37
 msgid "A list or dropdown of product categories."
-msgstr "Liste oder Dropdown-Auswahl der Produktkategorien."
+msgstr "Liste oder Dropdown-Auswahl der Produkt-Kategorien."
 
 #: includes/widgets/class-wc-widget-price-filter.php:131
 msgid "Price:"
@@ -16440,19 +16440,19 @@ msgstr "Platzhalter"
 #: includes/api/legacy/v2/class-wc-api-products.php:604
 #: includes/api/legacy/v3/class-wc-api-products.php:663
 msgid "A product category with the provided ID could not be found"
-msgstr "Keine Produktkategorie mit angegebener ID gefunden"
+msgstr "Keine Produkt-Kategorie mit angegebener ID gefunden"
 
 #: includes/api/legacy/v2/class-wc-api-products.php:593
 #: includes/api/legacy/v3/class-wc-api-products.php:652
 msgid "Invalid product category ID"
-msgstr "Ungültige ID für Produktkategorie"
+msgstr "Ungültige ID für Produkt-Kategorie"
 
 #: includes/api/legacy/v2/class-wc-api-products.php:560
 #: includes/api/legacy/v2/class-wc-api-products.php:598
 #: includes/api/legacy/v3/class-wc-api-products.php:619
 #: includes/api/legacy/v3/class-wc-api-products.php:657
 msgid "You do not have permission to read product categories"
-msgstr "Du hast keine Berechtigung, um Produktkategorien zu lesen"
+msgstr "Du hast keine Berechtigung, um Produkt-Kategorien zu lesen"
 
 #: includes/api/legacy/v2/class-wc-api-products.php:243
 #: includes/api/legacy/v2/class-wc-api-products.php:369
@@ -19818,7 +19818,7 @@ msgstr "Beliebige Kategorie"
 #: includes/class-wc-post-types.php:92
 #: includes/widgets/class-wc-widget-product-categories.php:43
 msgid "Product categories"
-msgstr "Produktkategorien"
+msgstr "Produkt-Kategorien"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:205
 msgid "Exclude products"
@@ -20064,7 +20064,7 @@ msgstr "Begriffe für Produkt-Eigenschaften können Produkten und Variationen zu
 
 #: includes/admin/class-wc-admin-taxonomies.php:323
 msgid "Product categories for your store can be managed here. To change the order of categories on the front-end you can drag and drop to sort them. To see more categories listed click the \"screen options\" link at the top-right of this page."
-msgstr "Hier kannst du die Produktkategorien für deinen Shop verwalten. Um die Reihenfolge der Kategorien in der Besucheransicht (Frontend) zu ändern, kannst du diese per „Drag and Drop“ zur gewünschten Position ziehen. Um mehr Kategorien pro Bearbeiten-Seite auflisten zu lassen, klicke bitte oben rechts auf den Tab „Ansicht anpassen“."
+msgstr "Hier kannst du die Produkt-Kategorien für deinen Shop verwalten. Um die Reihenfolge der Kategorien in der Besucheransicht (Frontend) zu ändern, kannst du diese per Drag-and-drop zur gewünschten Position ziehen. Um mehr Kategorien pro Bearbeiten-Seite auflisten zu lassen, klicke bitte oben rechts auf den Link „Ansicht anpassen“."
 
 #: includes/admin/class-wc-admin-taxonomies.php:159
 #: includes/admin/class-wc-admin-taxonomies.php:269
@@ -21064,7 +21064,7 @@ msgstr "Wahlweise kannst du deinen Produkten Kategorien zuordnen, um sie übersi
 
 #: includes/widgets/class-wc-widget-product-categories.php:39
 msgid "Product Categories"
-msgstr "Produktkategorien"
+msgstr "Produkt-Kategorien"
 
 #: includes/admin/class-wc-admin-pointers.php:181
 msgid "You can optionally \"tag\" your products here. Tags are a method of labeling your products to make them easier for customers to find."
